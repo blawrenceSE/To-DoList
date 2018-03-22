@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewDetail"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    tools:context=".DisplayList"
+    android:orientation="vertical"
+    android:background="@color/colorIndigoDark">
+        <TextView
+            android:id="@+id/textViewTask"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/task"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextTask"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Please add a task!"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:id="@+id/textViewContent"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:id="@+id/editTextContent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Please add a content!"
+            android:gravity="bottom"
+            android:inputType="textMultiLine"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/imageViewCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:onClick="backToMainActivity"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_cancel_button"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageViewOK"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:onClick="saveTask"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_tick_inside_circle"
+                    android:layout_weight="1"
+                    />
+        </LinearLayout>
+        <requestFocus />
+
+
+</LinearLayout>
