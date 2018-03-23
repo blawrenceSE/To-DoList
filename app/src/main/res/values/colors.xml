@@ -64,5 +64,7 @@
     <color name="colorDarkGrayLight">#484848</color>
     <color name="abc_primary_text_material_light">#de837b7b</color>
     <color name="primary_text_default_material_light">#de9c9090</color>
-
+    <color name="colorDarkGrayPrimaryT">#99363434</color>
+    <color name="colorDarkGrayDarkT">#99292929</color>
+    <color name="colorDarkGrayLightT">#99484848</color>
 </resources>
