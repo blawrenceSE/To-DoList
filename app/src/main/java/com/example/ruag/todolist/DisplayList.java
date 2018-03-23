@@ -68,8 +68,7 @@ public class DisplayList extends Activity {
             if(tempValue>0){
                 if(listdb.updateTask(id_To_Update,task.getText().toString(),content.getText().toString())){
                     Toast.makeText(getApplicationContext(), "Updated", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-                    startActivity(intent);
+                   backToMainActivity(view);
                 } else{
                     Toast.makeText(getApplicationContext(), "Not Updated", Toast.LENGTH_SHORT).show();
                 }

@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollViewDetail"
     android:layout_width="match_parent"
-    android:layout_height="400dp"
+    android:layout_height="match_parent"
     tools:context=".DisplayList"
     android:orientation="vertical"
-    android:background="@color/colorIndigoDark">
+    android:background="@color/colorDarkGrayLight">
         <TextView
             android:id="@+id/textViewTask"
             android:layout_width="match_parent"

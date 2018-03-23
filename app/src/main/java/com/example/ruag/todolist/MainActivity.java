@@ -24,8 +24,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     public final static String EXTRA_MESSAGE = "MESSAGE";
     DBHelper listdb;
-    SwipeMenuListView smlv;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -109,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClickAddTaskImageView(View view){
         Bundle dataBundle = new Bundle();
         dataBundle.putInt("id", 0);
+
         Intent intent = new Intent(getApplicationContext(), DisplayList.class);
         intent.putExtras(dataBundle);
         startActivity(intent);

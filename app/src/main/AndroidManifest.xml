@@ -18,7 +18,8 @@
             </intent-filter>
 
         </activity>
+        <activity android:name=".DisplayList" android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize"/>
 
-        <activity android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" android:name=".DisplayList"/>
     </application>
 </manifest>

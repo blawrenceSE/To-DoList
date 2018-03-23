@@ -7,9 +7,9 @@
     <string name="edit">Edit Task</string>
     <string name="delete">Delete Task</string>
     <string name="title_activity_display_task">DisplayTask</string>
-    <string name="task">Task</string>
+    <string name="task">TASK</string>
     <string name="back">Back</string>
-    <string name="content">Content</string>
+    <string name="content">CONTENT</string>
     <string name="save">Save Task</string>
     <string name="deleteTask">Are you sure, you want to delete it.</string>
     <string name="yes">Yes</string>
