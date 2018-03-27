@@ -74,7 +74,6 @@ public class DBHelper extends SQLiteOpenHelper {
         ContentValues contentValues = new ContentValues();
         contentValues.put("task", task);
         contentValues.put("content", content);
-//        db.update("TaskList", contentValues, "id = ? ", new String[] { Integer.toString(id) } );
         db.update("TaskList", contentValues, "id = ?" , new String[] { Integer.toString(id) } );
         return true;
     }

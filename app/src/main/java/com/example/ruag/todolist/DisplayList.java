@@ -65,8 +65,9 @@ public class DisplayList extends Activity {
     public void saveTask(View view) {
 
         Bundle extras = getIntent().getExtras();
-        Pattern sPattern = Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\\\S+$)$\n");
-        if(extras !=null && sPattern.matcher(task.getText().toString()).matches()){
+        Pattern sPattern = Pattern.compile("^[a-zA-Z0-9!@#$&()\\-`.+,/\"]+$");
+        boolean isAvailableData = sPattern.matcher(task.getText().toString()).matches();
+        if(extras !=null && isAvailableData){
             int tempValue = extras.getInt("id");
             if(tempValue>0){
                 if(listdb.updateTask(id_To_Update,task.getText().toString(),content.getText().toString())){
