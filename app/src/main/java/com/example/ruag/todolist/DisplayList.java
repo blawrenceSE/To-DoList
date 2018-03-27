@@ -15,6 +15,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import java.util.regex.Pattern;
+
 public class DisplayList extends Activity {
     private DBHelper listdb;
     EditText task;
@@ -63,7 +65,8 @@ public class DisplayList extends Activity {
     public void saveTask(View view) {
 
         Bundle extras = getIntent().getExtras();
-        if(extras !=null && !task.getText().toString().equals("")){
+        Pattern sPattern = Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\\\S+$)$\n");
+        if(extras !=null && sPattern.matcher(task.getText().toString()).matches()){
             int tempValue = extras.getInt("id");
             if(tempValue>0){
                 if(listdb.updateTask(id_To_Update,task.getText().toString(),content.getText().toString())){
